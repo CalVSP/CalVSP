@@ -24,9 +24,43 @@ If you are a Windows user, you can compile using gcc on the command prompt. Alte
 ## **How to Use**
 Add CalVSP as an environment variable.
 Open Terminal (Mac & Linux) or PowerShell (Windows).
+The general synopsis for using CalVSP is:
+```
+CalVSP -i inputFile 
+```
+File extension of inputFile is very important (but case-sensitive) because CalVSP will judge an input file format according to its file extension. The MOL2, PDB, XYZ and SDF formats are supported. The XYZ format is recommended for trajectory files.
+
 ```
 CalVSP -i alprenolol.xyz
 ```
+If optional parameter -d is provided, CalVSP will also output surface points data. 
+
+```
+CalVSP -i inputFile -d suf_Data.suf
+```
+
+If optional parameter -s is provided, CalVSP will calculate solvent-accessible surface volume and PSA of molecules. If the optional parameter - s is not followed by radius data, the default water molecule radius of 1.4 Å will be used to calculate the solvent accessible surface area. Users can use the corresponding solvent molecule radius data to calculate the accessible surface area of the solvent based on the calculation situation.
+
+```
+CalVSP -i inputFile -s or CalVSP -i inputFile -s 1.4 or CalVSP -i inputFile -s 1.5
+```
+
+If the optional parameter - g is provided, CalVSP will perform a molecular conformation search on the input molecular structure data by calling the Obabel program. Then calculate the molecular surface area, molecular volume, and PSA data.
+
+```
+CalVSP -i inputFile -g
+```
+
+If the optional parameter - m is provided, CalVSP will optimize the molecular structure of the input molecular structure data by calling the Obabel program or MOPAC program. Then calculate the molecular surface area, molecular volume, and PSA data.
+```
+CalVSP -i inputFile -m
+```
+The selection parameters - g and - m can be used simultaneously to first search for molecular conformation and then optimize the molecular structure based on the input molecular structure data. Finally, the molecular surface area, molecular volume, and PSA data are calculated based on the optimized molecular data.
+```
+CalVSP -i inputFile -g -m
+```
+
+
 
 ## **How to Cite**
 ## **License**

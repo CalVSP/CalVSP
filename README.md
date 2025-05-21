@@ -36,7 +36,7 @@ CalVSP -i alprenolol.xyz
 If optional parameter -d is provided, CalVSP will also output surface points data. 
 
 ```
-CalVSP -i inputFile -d suf_Data.suf
+CalVSP -i inputFile -d suf_Data.XYZ
 ```
 
 If optional parameter -s is provided, CalVSP will calculate solvent-accessible surface volume and PSA of molecules. If the optional parameter - s is not followed by radius data, the default water molecule radius of 1.4 Å will be used to calculate the solvent accessible surface area. Users can use the corresponding solvent molecule radius data to calculate the accessible surface area of the solvent based on the calculation situation.

@@ -22,8 +22,16 @@ If you are a Windows user, you can compile using gcc on the command prompt. Alte
 
 
 ## **How to Use**
+Add CalVSP as an environment variable.
+Open Terminal (Mac & Linux) or PowerShell (Windows).
+```
+CalVSP -i alprenolol.xyz
+```
 
-At first, open Terminal (Mac & Linux) or command prompt (Windows).
+## **How to Cite**
+## **License**
+This package is distributed under the MIT License.
+
 <!--
 **CalVSP/CalVSP** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 

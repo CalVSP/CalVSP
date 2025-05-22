@@ -3,6 +3,13 @@
 CalVSP is a free, cross-platform, scientific software for volume, surface and PSA computations of single molecules and trajectory files. It is a command line oriented program. It can be executed in a shell (UNIX/Linux systems) or at a Windows or DOS command prompt.
 ![屏幕截图 2025-05-21 192116](https://github.com/user-attachments/assets/0ac588c7-f8f2-4dff-ae1c-41955d163c77)
 
+## Software Requirement
+If molecular conformation search, energy minimization of molecular volume, molecular surface area, and PSA calculation are required, it is recommended to install Open Babel and MOPAC.
+
+Open Babel 3.0.0 -- Oct  7 2019 -- 20:03:12
+
+MOPAC2016™
+
 
 ## **Installation**
 The CalVSP program is written in C and has been tested on Linux and Windows platforms. It is provided as executable binary or source codes for each supported platform. To install the command line version of CalVSP please follow the instructions below.

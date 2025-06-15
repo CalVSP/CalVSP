@@ -71,7 +71,7 @@ CalVSP -i inputFile -g -m
 
 ## **How to Cite**
 ## **License**
-This package is distributed under the MIT License.
+This package is distributed under the MIT License.It is provided with the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. 
 
 <!--
 **CalVSP/CalVSP** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.

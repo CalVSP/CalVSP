@@ -18,12 +18,16 @@ The CalVSP program is written in C and has been tested on Linux and Windows plat
 3. compiling source code You can compile the program on your Linux computer using: 
 
 ```
-gcc CalVSP.c -o CalVSP -lm -O3
+gcc -DGAS CalVSP.c -o CalVSP -lm -O3
+OR gcc -DLIQUID CalVSP.c -o CalVSP -lm -O3
+OR gcc -DSOLID CalVSP.c -o CalVSP -lm -O3
 ```
   or
 
 ```
-gcc CalVSP.c -o CalVSP -lm
+gcc -DGAS CalVSP.c -o CalVSP -lm
+OR gcc -DLIQUID CalVSP.c -o CalVSP -lm 
+OR gcc -DSOLID CalVSP.c -o CalVSP -lm 
 ```
 If you are a Windows user, you can compile using gcc on the command prompt. Alternatively, install the free, portable, fast and simple C/C++ IDE Dev-C++, then Using Dev-C++, open the source code, click the compile option to compile and obtain the binary executable file.
 

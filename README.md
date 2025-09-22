@@ -15,19 +15,19 @@ MOPAC2016™
 The CalVSP program is written in C and has been tested on Linux and Windows platforms. It is provided as executable binary or source codes for each supported platform. To install the command line version of CalVSP please follow the instructions below.
 1. Install GNU C compiler if you haven't already. On Ubuntu you may use sudo apt-get install gcc, for other Linux users you may need to use a different method.
 2. Downloading the source code
-3. compiling source code You can compile the program on your Linux computer using: 
+3. compiling source code requires conditional compilation; -DGAS :for gas status; -DLIQUID for liquid status; -DSOLID for solid status  : 
 
 ```
-gcc -DGAS CalVSP.c -o CalVSP -lm -O3
-OR gcc -DLIQUID CalVSP.c -o CalVSP -lm -O3
-OR gcc -DSOLID CalVSP.c -o CalVSP -lm -O3
+gcc -DGAS CalVSP.c -o CalVSP -lm -O3         
+gcc -DLIQUID CalVSP.c -o CalVSP -lm -O3
+gcc -DSOLID CalVSP.c -o CalVSP -lm -O3
 ```
   or
 
 ```
 gcc -DGAS CalVSP.c -o CalVSP -lm
-OR gcc -DLIQUID CalVSP.c -o CalVSP -lm 
-OR gcc -DSOLID CalVSP.c -o CalVSP -lm 
+gcc -DLIQUID CalVSP.c -o CalVSP -lm 
+gcc -DSOLID CalVSP.c -o CalVSP -lm 
 ```
 If you are a Windows user, you can compile using gcc on the command prompt. Alternatively, install the free, portable, fast and simple C/C++ IDE Dev-C++, then Using Dev-C++, open the source code, click the compile option to compile and obtain the binary executable file.
 

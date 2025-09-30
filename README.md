@@ -71,8 +71,9 @@ The selection parameters - g and - m can be used simultaneously to first search 
 CalVSP -i inputFile -g -m
 ```
 
-##**Notes**##
+##**Notes**
 compiling source code requires conditional compilation; -DGAS :for gas status(electron density isosurface threshold of 0.001 a.u. ); -DLIQUID for liquid status (electron density isosurface threshold of 0.0016 a.u.); -DSOLID for solid status (electron density isosurface threshold of 0.002 a.u.)
+Please note that the file of ele_data.txt should be in the same directory as the running program CalVSP.
 
 ## **How to Cite**
 ## **License**

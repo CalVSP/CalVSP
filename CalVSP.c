@@ -195,7 +195,7 @@ int main(int argc, char *argv[])
 			sscanf(buffer_command, "%d", &mopac_charge);
 			printf("You entered charge is: %d \n",mopac_charge);
 			printf("Please enter the Dielectric constant of solution for MOPAC calculation\n");	
-			printf("vacuum epsilon = 0.0 water epsilon= 78.3553, N-Octanol epsilon =9.8629, DMSO��epsilon =46.826, Heptane: epsilon =1.9113 ...\n");	
+			printf("vacuum epsilon = 0.0 water epsilon= 78.3553, N-Octanol epsilon =9.8629, DMSO£ºepsilon =46.826, Heptane: epsilon =1.9113 ...\n");	
 			fgets(buffer_command, sizeof(buffer_command), stdin);
 			sscanf(buffer_command, "%f", &dielectric);
 			printf("You entered Dielectric constant is : %f \n",dielectric);	
@@ -649,7 +649,7 @@ float  cal_grid_dis(struct grid grid_dataa,struct grid grid_datab)
 }
 
 
-/*  van der Waals radii cited from Dalton Trans., 2013, 42, 8617–8636*/
+/*  van der Waals radii cited from Dalton Trans., 2013, 42, 8617â8636*/
 
 int cal_dis(struct atoms *atom_data,int atom_number,float water_radius,float x,float y,float z)
 {
@@ -1664,25 +1664,8 @@ int calculate(struct atoms *atom_data, struct result *resultdata,int if_trace_fi
     #error "The status must be defined: SOLID, LIQUID or GAS"
 #endif	
 	
-	
-	
-	
-	
-	
-	
-	
-	if(box_vol<100.0) grid_gap=0.40;
-	else if ((box_vol>=100.0)&&(box_vol<360.0)) grid_gap=0.44;
-	else if((box_vol>=360.0)&&(box_vol<1000.0))	grid_gap=0.42;	
-	else grid_gap=0.43;	
-	
-	
-	
-	
-	
-	
-	
-	
+
+		
 	
 	box_x=(int)((minmax.xmax-minmax.xmin+8.0)/grid_gap);
 	box_y=(int)((minmax.ymax-minmax.ymin+8.0)/grid_gap);
@@ -3120,7 +3103,7 @@ float get_dis()
 	printf("Enter the lowest proportion of the selected Boltzmann distribution 0-100 (0.5 refers to 0.5%% and default):\n");
 	fgets(buffer_command, sizeof(buffer_command), stdin);
 	sscanf(buffer_command, "%f", &bloz);
-	printf("You selected Boltzmann distribution is：%f%%\n",bloz);
+	printf("You selected Boltzmann distribution isï¼%f%%\n",bloz);
 	return bloz;	
 }
 void add_prefix(char *newnamef, char *name, char *add)
@@ -3268,3 +3251,4 @@ int is_number(const char *str) {
     strtod(str, &endptr);
     return (*endptr == '\0');  
 }
+

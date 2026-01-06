@@ -76,6 +76,7 @@ Conditional compilation：-DGAS :for gas status(electron density isosurface thre
 Please note that the file of ele_data.txt should be in the same directory as the running program CalVSP.
 
 ## **How to Cite**
+Li, Y., Yang, D., Shi, Q. et al. CalVSP: a program for analyzing the molecular surface areas, volumes, and polar surface areas. J Cheminform 17, 181 (2025). https://doi.org/10.1186/s13321-025-01120-2
 ## **License**
 This package is distributed under the MIT License.It is provided with the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. 
 
